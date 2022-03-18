@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/holiday-requests",
+      "handler": "holiday-requests.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/holiday-requests/count",
+      "handler": "holiday-requests.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/holiday-requests/:id",
+      "handler": "holiday-requests.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/holiday-requests",
+      "handler": "holiday-requests.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/holiday-requests/:id",
+      "handler": "holiday-requests.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/holiday-requests/:id",
+      "handler": "holiday-requests.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

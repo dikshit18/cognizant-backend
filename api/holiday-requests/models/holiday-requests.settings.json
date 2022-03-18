@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "holiday_requests",
+  "info": {
+    "name": "holiday-requests"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fromDate": {
+      "type": "date"
+    },
+    "toDate": {
+      "type": "date"
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "isApprovedByManager": {
+      "type": "boolean",
+      "default": false
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "holiday_request"
+    }
+  }
+}
