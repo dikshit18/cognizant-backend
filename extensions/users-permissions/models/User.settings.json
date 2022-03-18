@@ -59,9 +59,9 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "holiday_request": {
+    "holiday_requests": {
       "via": "user",
-      "model": "holiday-requests"
+      "collection": "holiday-requests"
     }
   }
 }
